@@ -4,14 +4,14 @@ module tb_BCD2Excess6;
   wire [3:0] O;
 
   BCD2Excess6 uut(
-    .A(I[0]),
-    .B(I[1]),
-    .C(I[2]),
-    .D(I[3]),
-    .W(O[0]),
-    .X(O[1]),
-    .Y(O[2]),
-    .Z(O[3])
+    .A(I[3]),
+    .B(I[2]),
+    .C(I[1]),
+    .D(I[0]),
+    .W(O[3]),
+    .X(O[2]),
+    .Y(O[1]),
+    .Z(O[0])
   );
 
   initial 
