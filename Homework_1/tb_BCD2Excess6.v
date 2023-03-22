@@ -26,6 +26,6 @@ module tb_BCD2Excess6;
       // #10 A = 0 ; B = 1 ; C = 1 ; D = 0;
       // #10 A = 1 ; B = 1 ; C = 1 ; D = 1;
     end
-  initial #50 $finish;
+  initial #60 $finish;
 
 endmodule
