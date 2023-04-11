@@ -5,3 +5,4 @@
 *.sim/
 vivado*.*
 gitmemo.md
+*.runs/
