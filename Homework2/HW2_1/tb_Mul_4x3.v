@@ -7,13 +7,14 @@ initial begin
     
     A=0;
     B=0;
-
-    #20 A=3'h2;
-        B=4'h8;
-    #20 A=3'h3;
-        B=4'h9;
-    #20 A=3'h4;
-        B=4'ha;
+    repeat(7) begin
+        #20 A=A+3'h1;
+        #10 B=B+4'h1;
     end
-    initial #150 $finish;
+    end
+initial begin
+    $display ("                  time  Multiple_A Multiple_B Result");
+    $monitor ($time, "    %b        %b       %b",A,B,C);
+end
+initial #150 $finish;
 endmodule
