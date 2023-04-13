@@ -10,6 +10,6 @@ module Full_adder(
         .z(z),
         .D(D_wire)
     );
-    assign {S}=D_wire[1]||D_wire[2]||D_wire[4]||D_wire[7];
-    assign {C}=D_wire[3]||D_wire[5]||D_wire[6]||D_wire[7];
+    assign S =D_wire[1]||D_wire[2]||D_wire[4]||D_wire[7];
+    assign C =D_wire[3]||D_wire[5]||D_wire[6]||D_wire[7];
 endmodule
