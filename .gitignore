@@ -6,6 +6,6 @@
 vivado*.*
 gitmemo.md
 *.runs/
+!*.runs/**/*.bit
 HW2.7z
-!*.runs/impl_*/*.bit
-!*.xdc
+!*.srcs/**/*.xdc
