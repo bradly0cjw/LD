@@ -7,6 +7,7 @@ initial begin clk=0;forever #5 clk=~clk;end
 initial fork
     #0 rst=0;
     #2 rst=1;
+    #0 x=0;
     #10 x=0;
     #20 x=1;
     #30 x=0;
