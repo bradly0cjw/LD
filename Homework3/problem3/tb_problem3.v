@@ -21,7 +21,4 @@ initial begin
     #10 x=1;
     #10 x=1;
 end
-initial begin
-    $monitor ($time, "    %b %b",x,y);
-end
 endmodule
