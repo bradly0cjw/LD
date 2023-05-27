@@ -2,7 +2,7 @@ module problem4(x,y,clk,rst);
 input x,clk,rst;
 output y;
 reg [1:0]state;
-parameter S0=3'b000,S1=3'b001,S2=3'b010,S3=3'b011;
+parameter S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
 always@(posedge clk,negedge rst)
     if(rst==0) state<=S0;
     else case(state)
