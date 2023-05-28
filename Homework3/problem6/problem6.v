@@ -8,8 +8,8 @@ always@(posedge clk,negedge rst)
     else case(state)
         S0:if(~x)state<=S0;else state<=S1;
         S1:if(~x)state<=S1;else state<=S2;
-        S2:if(~x)state<=S1;else state<=S3;
-        S3:if(~x)state<=S1;else state<=S0;
+        S2:if(~x)state<=S3;else state<=S1;
+        S3:if(~x)state<=S2;else state<=S0;
     endcase
     assign y=((state[1])|(state[0]));
 endmodule
