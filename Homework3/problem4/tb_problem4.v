@@ -1,8 +1,8 @@
 module tb_problem4();
 reg x,clk,rst;
-wire y,y2;
+wire y;
 problem4 M0(x,y,clk,rst);
-problem4a M1(x,y2,clk,rst);
+// problem4a M1(x,y2,clk,rst);
 initial #200 $finish;
 initial begin clk=0;forever #5 clk=~clk;end
 initial fork
