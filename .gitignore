@@ -9,3 +9,4 @@ gitmemo.md
 !*.runs/**/*.bit
 HW2.7z
 !*.srcs/**/*.xdc
+FE/

@@ -1,7 +1,8 @@
 module tb_problem5;
 reg clk,rst;
-wire [3:0] out;
+wire [3:0] out,out2;
 problem5 M0(out,clk,rst);
+problem5a M1(out2,clk,rst);
 initial #120 $finish;
 always #5 clk=~clk;
 initial fork
